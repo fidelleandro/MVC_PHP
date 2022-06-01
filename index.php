@@ -1,4 +1,5 @@
 <?php  
+
 $url = parse_url($_SERVER['REQUEST_URI']);
 $path = explode('/',$url['path']);
 $protocolo = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https://' : 'http://';
