@@ -7,15 +7,15 @@ $path[1] = $servername == 'localhost' ? $protocolo.$servername.'/'.$path[1] : $p
 unset($path[0]);
 $mis_rutas = $path;
 unset($mis_rutas[1]);
-print_r($mis_rutas);  
+//print_r($mis_rutas);  
 include 'System/Router.php'; 
 require_once 'System/Views.php';
 include 'Routes/web.php';
 include 'Controllers/Controller.php';
 
-echo '<pre>';
-print_r(Router::$routes); 
-echo '</pre>';
+// echo '<pre>';
+// print_r(Router::$routes); 
+// echo '</pre>';
 foreach (Router::$routes as $route => $value) {
     if (file_exists( 'Controllers/'.$value['controller'].'.php')) {
         //echo 'Controllers/'.$value['controller'].'.php'; exit;

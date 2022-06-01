@@ -7,6 +7,6 @@
     <title>Gestion de producto</title>
 </head>
 <body>
-    <p>Esta es la pagina de gestion de productos</p>
+    <strong>Esta es la pagina de gestion de productos</strong>
 </body>
 </html>

@@ -8,6 +8,10 @@ class ProductoController extends Controller{
         $this->view('admin/gestion_producto');
     }
     public function ver(){
+
         echo 'viendo un producto'; exit;  
+    }
+    public function crear_producto(){
+        
     }
 }
