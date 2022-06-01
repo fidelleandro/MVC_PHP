@@ -1,18 +1,13 @@
 <?php
-  Class Router{
+      Class Router{
+         public static $routes = [];
+         
+         public function __construct(){}
 
-    private static $routes = [];
+         public static function GET($route,$controller,$method){
+            static::$routes[$route] = ['controller' => $controller,
+                                       'method' => $method
+                                      ];
+         }
 
-    private function __construct() {}
-    public static function add($route,$controller,$method){
-       static::$routes[$route] = ["controller" => $controller, "method" => $method];
-    }
-    public static function getAction ($route) {
-      if(array_key_exists($route,static::$routes)) {
-         return static::$routes[$route];
       }
-      else{
-         throw new Exception("2");   
-      } 
-    }
-  }
