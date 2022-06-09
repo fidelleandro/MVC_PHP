@@ -8,5 +8,9 @@
 </head>
 <body>
     <strong>Esta es la pagina de gestion de productos</strong>
+    <form action="http://localhost/MVC_PHP/gestion-de-productos-action/" method="POST">
+        <input type="hidden" value="hidden">
+        <button type="submit">Enviar</button>
+    </form>
 </body>
 </html>
