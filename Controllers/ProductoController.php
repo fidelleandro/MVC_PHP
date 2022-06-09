@@ -8,7 +8,15 @@ class ProductoController extends Controller{
         $this->view('admin/gestion_producto');
     }
     public function exportarExcel(){
-        echo 'Exportar a excel'; exit;  
+        echo 'Exportar a excel';
+        /****** Muestran todo tipo de errores en php *******/ 
+        ini_set('display_errors', 1);
+        ini_set('display_startup_errors', 1);
+        error_reporting(E_ALL);
+        /**************************************************/
+        require 'librerias/PHPExcel-1.8/PHPExcel.php';
+
+        exit;  
     }
     public function action(){
         echo 'action <br>';  
